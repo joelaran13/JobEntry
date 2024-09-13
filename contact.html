@@ -118,29 +118,29 @@
                     <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.5s">
                             <p class="mb-4">Test</p>
-                            <form action="sendEmail.php" method="POST">
+                            <form action="saveContact.php" method="POST">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
                                             <label for="name">Your Full Name (NRIC)</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12"> 
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone Number">
+                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone Number" required>
                                             <label for="phone">Your Phone Number</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
                                             <label for="message">Additional Note</label>
                                         </div>
                                     </div>
@@ -149,6 +149,7 @@
                                     </div>
                                 </div>
                             </form>
+                            
                         </div>
                     </div>                    
                 </div>
